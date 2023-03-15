@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="col-6 offset-3">
+  <form action="/results" method="post">
+
+    <div class="mb-3">
+      <label for="vid_ID">Video ID</label>
+      <input type="text" class="form-control" id="vid_ID" name="video_id">
+    </div>
+
+    <div class="mb-3">
+      <label for="lang">Language</label>
+      <input type="text" class="form-control" id="lang" name="lang_string">
+
+    <div class="col offset-3">
+      <button type="submit" class="btn btn-primary">Translate</button>
+    </div>
+    </div>
+  </form>
+</div>
+
+
+{% endblock %}
+
